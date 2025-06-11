@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUINotificationApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUINotificationApp"
+    xmlns:auth="clr-namespace:MAUINotificationApp.MVVM.Views.Authentication"
+    xmlns:user="clr-namespace:MAUINotificationApp.MVVM.Views.User"
+
+    Shell.FlyoutBehavior="Disabled"
+    Title="MAUINotificationApp">
+
+    <!-- Páginas que no se muestran en el menú lateral -->
+    <ShellContent
+      Title="Loading"
+      ContentTemplate="{DataTemplate auth:LoadingPage}"
+      Route="LoadingPage"
+      Shell.FlyoutBehavior="Disabled"
+      Shell.FlyoutItemIsVisible="False" />
+
+    <ShellContent
+      Title="Login"
+      ContentTemplate="{DataTemplate auth:LoginPage}"
+      Route="LoginPage"
+      Shell.FlyoutBehavior="Disabled"
+      Shell.FlyoutItemIsVisible="False"/>
+
+    <!-- Agrupación de tabs dentro de un único FlyoutItem -->
+    <FlyoutItem Title="Home">
+        <!-- Tab Main -->
+        <ShellContent
+              Title="Home"
+              ContentTemplate="{DataTemplate local:MainPage}"
+              Route="MainPage">
+
+        </ShellContent>
+        
+        <ShellContent
+                Title="Profile"
+                ContentTemplate="{DataTemplate user:ProfilePage}"
+                Route="ProfilePage">
+
+        </ShellContent>
+    </FlyoutItem>
+
+
+</Shell>

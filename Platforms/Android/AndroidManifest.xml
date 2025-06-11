@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.example.yourapp">
+	<application android:allowBackup="true" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:label="MAUINotificationApp">
+		<!-- Receiver de FirebaseInstanceIdInternalReceiver (sin conflicto) -->
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+		<!-- 
+      Receiver de FirebaseInstanceIdReceiver (conflictivo); 
+      aquí aplicamos tools:replace para “android:permission”
+    -->
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND" tools:replace="android:permission">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="${applicationId}" />
+			</intent-filter>
+		</receiver>
+	</application>
+	<!-- Permisos de red -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

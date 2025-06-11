@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <!-- Opción A: Permitir cleartext globalmente (no recomendado en producción) -->
+  <base-config cleartextTrafficPermitted="true" />
+
+  <!-- Opción B: Permitir cleartext solo a un dominio específico
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">www.cesva.com</domain>
+  </domain-config>
+  -->
+</network-security-config>
