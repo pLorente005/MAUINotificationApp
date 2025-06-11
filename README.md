@@ -31,17 +31,18 @@
 
 ## Pantallas de la aplicación
 
-- **LoadingPage:** Verifica si el usuario está autenticado y redirige automáticamente.
-  ![image](https://github.com/user-attachments/assets/d9a91f44-a0f2-4f34-a02e-6c348c1b80ea)
+- **LoadingPage:** Verifica si el usuario está autenticado y redirige automáticamente.  
+  <img src="https://github.com/user-attachments/assets/d9a91f44-a0f2-4f34-a02e-6c348c1b80ea" style="border:1px solid #ccc; border-radius:4px;" width="400"/>
 
-- **LoginPage:** Formulario para introducir usuario y contraseña.
-  ![image](https://github.com/user-attachments/assets/8380943a-35e8-4fce-8dc8-5c944636cb20)
+- **LoginPage:** Formulario para introducir usuario y contraseña.  
+  <img src="https://github.com/user-attachments/assets/8380943a-35e8-4fce-8dc8-5c944636cb20" style="border:1px solid #ccc; border-radius:4px;" width="400"/>
 
-- **MainPage:** Página principal con botón para enviar notificaciones de prueba.
-  ![image](https://github.com/user-attachments/assets/7ace63ea-34a0-4fbf-9d28-d67c97b7204e)
+- **MainPage:** Página principal con botón para enviar notificaciones de prueba.  
+  <img src="https://github.com/user-attachments/assets/7ace63ea-34a0-4fbf-9d28-d67c97b7204e" style="border:1px solid #ccc; border-radius:4px;" width="400"/>
 
-- **ProfilePage:** Permite al usuario cerrar sesión.
-  ![image](https://github.com/user-attachments/assets/fde4179e-2a28-4873-b90d-4c46cd8630aa)
+- **ProfilePage:** Permite al usuario cerrar sesión.  
+  <img src="https://github.com/user-attachments/assets/fde4179e-2a28-4873-b90d-4c46cd8630aa" style="border:1px solid #ccc; border-radius:4px;" width="400"/>
+
 
 
 ---
