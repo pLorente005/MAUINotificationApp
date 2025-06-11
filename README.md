@@ -1,4 +1,4 @@
-# FirebasePushNotifications
+# MAUINotificationApp
 
 ## Descripción general
 
@@ -71,32 +71,6 @@
 ## Guía paso a paso
 
 [Guía MAUINotificationsApp.pdf](https://github.com/user-attachments/files/20690668/Guia.MAUINotificationsApp.pdf)
-
----
-
-## Cómo ejecutar la aplicación
-
-1. Clona el repositorio en tu equipo.
-2. Restaura los paquetes NuGet.
-3. Configura los valores de `FunctionBaseUrl` y `FunctionKey` en el código.
-4. Compila y ejecuta la aplicación en un emulador o dispositivo.
-5. Concede permisos de notificaciones si ejecutas en Android 13 o superior.
-
----
-
-## Estructura general del proyecto
-
-```
-├── Services/              # Lógica de autenticación
-├── ViewModels/            # Lógica de presentación para las páginas
-├── Views/
-│   ├── Authentication/    # Páginas de login y carga
-│   └── User/              # Páginas de usuario (perfil)
-├── MainPage.xaml          # Página principal de pruebas de notificaciones
-├── AppShell.xaml          # Navegación de la aplicación
-├── MauiProgram.cs         # Configuración de dependencias y servicios
-└── App.xaml.cs            # Inicialización de la aplicación
-```
 
 ---
 
