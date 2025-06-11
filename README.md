@@ -68,26 +68,9 @@
 
 ---
 
-## Configuración previa necesaria
+## Guía paso a paso
 
-### 1. Configuración de Firebase
-
-- Crear un proyecto en [Firebase Console](https://console.firebase.google.com/).
-- Configurar Firebase Cloud Messaging.
-- Descargar y agregar el archivo `google-services.json` al proyecto (para Android).
-- Configurar correctamente el plugin `Plugin.Firebase.CloudMessaging`.
-
-### 2. Configuración del backend (Azure Functions)
-
-- Desarrollar y desplegar las funciones necesarias: `login`, `logout`, `registerdevice` y `sendnotifications`.
-- Estas funciones reciben los parámetros vía query strings.
-- Configurar correctamente las URLs y claves en el código de la app.
-
-### 3. Ajuste de constantes en el código
-
-- `FunctionBaseUrl`: URL base de las Azure Functions.
-- `FunctionKey`: Clave de autorización de las funciones.
-- `DemoUser`: Usuario de prueba utilizado en la app.
+[Guía MAUINotificationsApp.pdf](https://github.com/user-attachments/files/20690668/Guia.MAUINotificationsApp.pdf)
 
 ---
 
