@@ -1,6 +1,5 @@
 # FirebasePushNotifications
 
----
 
 ## Descripción general
 
